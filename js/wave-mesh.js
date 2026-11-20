@@ -21,6 +21,10 @@
     var canvas = document.createElement('canvas');
     canvas.setAttribute('aria-hidden', 'true');
     canvas.className = 'wave-canvas';
+    // Estilo inline de propósito: se o CSS mudar, o canvas continua fora do fluxo
+    // e nunca passa a empurrar (ou aumentar) a seção que o contém.
+    canvas.style.cssText =
+      'position:absolute;inset:0;width:100%;height:100%;display:block;pointer-events:none;z-index:0';
     host.insertBefore(canvas, host.firstChild);
     var ctx = canvas.getContext('2d');
     if (!ctx) { canvas.remove(); return; }
