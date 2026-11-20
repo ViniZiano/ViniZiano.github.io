@@ -12,6 +12,7 @@
 <title>Vinícius Ziano | Desenvolvedor de Software</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="images/icone-portif%C3%B3lio.png">
+<script>document.documentElement.classList.add('js')</script>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -22,11 +23,11 @@
       <span class="brand-text">Vinícius Ziano</span>
     </a>
     <ul class="nav-links" id="navLinks">
-      <li><a aria-current="page" href="index.html">Início</a></li>
-      <li><a href="sobre.html">Sobre</a></li>
-      <li><a href="index.html#habilidades">Habilidades</a></li>
-      <li><a href="index.html#projetos">Projetos</a></li>
-      <li><a href="index.html#contato">Contato</a></li>
+      <li><a data-i18n="nav.home" aria-current="page" href="index.html">Início</a></li>
+      <li><a data-i18n="nav.about" href="sobre.html">Sobre</a></li>
+      <li><a data-i18n="nav.skills" href="index.html#habilidades">Habilidades</a></li>
+      <li><a data-i18n="nav.projects" href="index.html#projetos">Projetos</a></li>
+      <li><a data-i18n="nav.contact" href="index.html#contato">Contato</a></li>
     </ul>
     <div class="nav-actions">
       <button class="lang-toggle" id="langToggle" type="button" aria-label="Mudar idioma">EN</button>
@@ -39,17 +40,17 @@
 </header>
 
 <main>
-  <section class="hero hero-wave" id="inicio">
+  <section class="hero hero-wave" id="inicio" data-wave-mesh data-wave-dot="#7fb3c8" data-wave-accent="#5EEAD4" data-wave-crests="true">
     <div class="wrap hero-grid">
       <div class="hero-copy">
-        <div class="hero-status"><span class="dot" aria-hidden="true"></span><span>Disponível para vaga júnior · Java &amp; Front-end</span></div>
+        <div class="hero-status"><span class="dot" aria-hidden="true"></span><span data-i18n="hero.status">Disponível para vaga júnior · Java &amp; Front-end</span></div>
         <h1 class="hero-title-main">Vinícius Ziano</h1>
-        <span class="hero-role">Desenvolvedor Back-end &amp; Web</span>
-        <p class="lede">Construo APIs robustas em Java &amp; Spring Boot e interfaces modernas.</p>
+        <span class="hero-role" data-i18n="hero.role">Desenvolvedor Back-end &amp; Web</span>
+        <p class="lede" data-i18n="hero.lede">Construo APIs robustas em Java &amp; Spring Boot e interfaces modernas.</p>
         <div class="hero-cta">
-          <a class="btn btn-primary" href="#projetos">Ver projetos</a>
+          <a class="btn btn-primary" data-i18n="btn.projects" href="#projetos">Ver projetos</a>
           <a class="btn btn-ghost" href="assets/curriculo-vinicius-ziano.pdf" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Currículo
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg><span data-i18n="btn.cv">Currículo</span>
           </a>
         </div>
       </div>
@@ -63,8 +64,8 @@
 
   <section id="habilidades" class="bg-grid-glow">
     <div class="wrap">
-      <h2 class="section-title reveal">Tecnologias que uso</h2>
-      <p class="section-sub reveal">As ferramentas com que estudo e construo meus projetos.</p>
+      <h2 class="section-title reveal" data-i18n="skills.title">Tecnologias que uso</h2>
+      <p class="section-sub reveal" data-i18n="skills.sub">As ferramentas com que estudo e construo meus projetos.</p>
       <div class="tech-groups">
         <div class="tech-group reveal">
           <h3>Back-end</h3>
@@ -76,7 +77,7 @@
           </div>
         </div>
         <div class="tech-group reveal">
-          <h3>Desenvolvimento web</h3>
+          <h3 data-i18n="skills.web">Desenvolvimento web</h3>
           <div class="tech-grid">
             <div class="tech-card spotlight"><div class="tech-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div><span class="name">HTML 5</span></div>
             <div class="tech-card spotlight"><div class="tech-icon"><span class="glyph">{ }</span></div><span class="name">CSS 3</span></div>
@@ -90,11 +91,11 @@
 
   <section id="projetos" class="bg-dots-matrix">
     <div class="wrap">
-      <h2 class="section-title reveal">Meus projetos</h2>
-      <p class="section-sub reveal">Projetos pessoais e acadêmicos, com o código aberto no GitHub.</p>
+      <h2 class="section-title reveal" data-i18n="projects.title">Meus projetos</h2>
+      <p class="section-sub reveal" data-i18n="projects.sub">Projetos pessoais e acadêmicos, com o código aberto no GitHub.</p>
       
       <div class="filter-buttons" id="projectFilters">
-        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn active" data-filter="all" aria-pressed="true" data-i18n="filter.all">Todos</button>
         <button class="filter-btn" data-filter="Java">Java</button>
         <button class="filter-btn" data-filter="Spring Boot">Spring Boot</button>
         <button class="filter-btn" data-filter="Front-end">Front-end / Web</button>
@@ -111,13 +112,13 @@
             <h3>Sistema Bancário em Java</h3>
             <p>Contas com várias chaves Pix, transferências, investimentos com rendimento e extrato. Roda no terminal e como site com API REST em Java puro.</p>
             <div class="ps">
-              <div class="ps-row"><span class="ps-label problem">Problema</span><span class="ps-text">Regras bancárias não podem falhar: saldo, chaves Pix repetidas e rastreio de cada centavo.</span></div>
-              <div class="ps-row"><span class="ps-label solution">Solução</span><span class="ps-text">Domínio com auditoria por transação e exceções de negócio, exposto por uma API HTTP sem frameworks e um site por cima.</span></div>
+              <div class="ps-row"><span class="ps-label problem" data-i18n="ps.problem">Problema</span><span class="ps-text">Regras bancárias não podem falhar: saldo, chaves Pix repetidas e rastreio de cada centavo.</span></div>
+              <div class="ps-row"><span class="ps-label solution" data-i18n="ps.solution">Solução</span><span class="ps-text">Domínio com auditoria por transação e exceções de negócio, exposto por uma API HTTP sem frameworks e um site por cima.</span></div>
             </div>
             <div class="tags"><span class="tag">Java</span><span class="tag">POO</span><span class="tag">API REST</span><span class="tag">JUnit</span><span class="tag">Docker</span><span class="tag">GitHub Actions</span></div>
             <div class="card-actions">
-              <button class="btn btn-primary btn-sm open-api-modal" data-project="banco">Testar API REST</button>
-              <a class="btn btn-ghost btn-sm" href="https://github.com/ViniZiano/Sistema-Bancario-Java" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Ver código</a>
+              <button class="btn btn-primary btn-sm open-api-modal" data-i18n="btn.testapi" data-project="banco">Testar API REST</button>
+              <a class="btn btn-ghost btn-sm" href="https://github.com/ViniZiano/Sistema-Bancario-Java" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg><span data-i18n="btn.code">Ver código</span></a>
             </div>
           </div>
         </article>
@@ -132,13 +133,13 @@
             <h3>DevTasks</h3>
             <p>Gerenciador de tarefas com cadastro, login e site integrado à API. Cada usuário gerencia apenas as próprias tarefas.</p>
             <div class="ps">
-              <div class="ps-row"><span class="ps-label problem">Problema</span><span class="ps-text">Listas de tarefas soltas não se param o que é de cada pessoa nem oferecem uma API para integrar.</span></div>
-              <div class="ps-row"><span class="ps-label solution">Solução</span><span class="ps-text">Autenticação com JWT e Spring Security: toda rota exige token e a tarefa de outro usuário nunca é exposta.</span></div>
+              <div class="ps-row"><span class="ps-label problem" data-i18n="ps.problem">Problema</span><span class="ps-text">Listas de tarefas soltas não separam o que é de cada pessoa nem oferecem uma API para integrar.</span></div>
+              <div class="ps-row"><span class="ps-label solution" data-i18n="ps.solution">Solução</span><span class="ps-text">Autenticação com JWT e Spring Security: toda rota exige token e a tarefa de outro usuário nunca é exposta.</span></div>
             </div>
             <div class="tags"><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Spring Security</span><span class="tag">JWT</span><span class="tag">Spring Data JPA</span><span class="tag">MySQL</span><span class="tag">JUnit</span><span class="tag">Docker</span></div>
             <div class="card-actions">
-              <button class="btn btn-primary btn-sm open-api-modal" data-project="devtasks">Testar API REST</button>
-              <a class="btn btn-ghost btn-sm" href="https://github.com/ViniZiano/Devtasks" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Ver código</a>
+              <button class="btn btn-primary btn-sm open-api-modal" data-i18n="btn.testapi" data-project="devtasks">Testar API REST</button>
+              <a class="btn btn-ghost btn-sm" href="https://github.com/ViniZiano/Devtasks" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg><span data-i18n="btn.code">Ver código</span></a>
             </div>
           </div>
         </article>
@@ -153,13 +154,13 @@
             <h3>Anjos do Poço</h3>
             <p>Site de adoção para uma ONG de animais, com galeria de pets, busca e filtros, FAQ, páginas de sobre e contato e área administrativa.</p>
             <div class="ps">
-              <div class="ps-row"><span class="ps-label problem">Problema</span><span class="ps-text">Quem quer adotar precisa achar o animal certo rápido, e a ONG precisa manter os dados em dia.</span></div>
-              <div class="ps-row"><span class="ps-label solution">Solução</span><span class="ps-text">Galeria com busca e filtros e área administrativa, com dados migrados de JSON para SQLite por script em Node.js.</span></div>
+              <div class="ps-row"><span class="ps-label problem" data-i18n="ps.problem">Problema</span><span class="ps-text">Quem quer adotar precisa achar o animal certo rápido, e a ONG precisa manter os dados em dia.</span></div>
+              <div class="ps-row"><span class="ps-label solution" data-i18n="ps.solution">Solução</span><span class="ps-text">Galeria com busca e filtros e área administrativa, com dados migrados de JSON para SQLite por script em Node.js.</span></div>
             </div>
             <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Node.js</span><span class="tag">SQLite</span><span class="tag">Front-end</span></div>
             <div class="card-actions">
-              <a class="btn btn-primary btn-sm" href="https://viniziano.github.io/Ong-Anjos-Do-Poco/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>Ver projeto</a>
-              <a class="btn btn-ghost btn-sm" href="https://github.com/ViniZiano/Ong-Anjos-Do-Poco" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Ver código</a>
+              <a class="btn btn-primary btn-sm" href="https://viniziano.github.io/Ong-Anjos-Do-Poco/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg><span data-i18n="btn.view">Ver projeto</span></a>
+              <a class="btn btn-ghost btn-sm" href="https://github.com/ViniZiano/Ong-Anjos-Do-Poco" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg><span data-i18n="btn.code">Ver código</span></a>
             </div>
           </div>
         </article>
@@ -169,10 +170,10 @@
 
   <section id="contato" class="contact bg-aurora-end">
     <div class="wrap">
-      <h2 class="section-title reveal">Vamos conversar?</h2>
-      <p class="section-sub reveal">Buscando minha primeira vaga como desenvolvedor júnior em Java, e aberto a oportunidades em front-end. Me chama no WhatsApp ou pelo LinkedIn.</p>
+      <h2 class="section-title reveal" data-i18n="contact.title">Vamos conversar?</h2>
+      <p class="section-sub reveal" data-i18n="contact.sub">Buscando minha primeira vaga como desenvolvedor júnior em Java, e aberto a oportunidades em front-end. Me chama no WhatsApp ou pelo LinkedIn.</p>
       <div class="contact-row reveal">
-        <div class="mail-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a class="mail-link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=viniciusziano2267@gmail.com&amp;su=Contato%20pelo%20portf%C3%B3lio" target="_blank" rel="noopener">viniciusziano2267@gmail.com</a><button type="button" class="copy-btn" data-copy="viniciusziano2267@gmail.com">Copiar</button></div>
+        <div class="mail-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a class="mail-link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=viniciusziano2267@gmail.com&amp;su=Contato%20pelo%20portf%C3%B3lio" target="_blank" rel="noopener">viniciusziano2267@gmail.com</a><button type="button" class="copy-btn" data-copy="viniciusziano2267@gmail.com" data-i18n="btn.copy">Copiar</button></div>
         <div class="social">
           <a class="btn btn-primary btn-sm" href="https://wa.me/5581983697754" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>WhatsApp</a>
           <a class="btn btn-ghost btn-sm" href="https://www.linkedin.com/in/ViniZiano" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>LinkedIn</a>

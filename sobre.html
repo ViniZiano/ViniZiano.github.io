@@ -12,6 +12,7 @@
 <title>Sobre | Vinícius Ziano</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="images/icone-portif%C3%B3lio.png">
+<script>document.documentElement.classList.add('js')</script>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,17 +21,22 @@
     <a class="brand" href="index.html">
       <span class="brand-monogram" aria-hidden="true">VZ</span>
       <span class="brand-text">Vinícius Ziano</span>
-      <span class="brand-pill" aria-hidden="true"><span class="brand-dot"></span>java · web</span>
     </a>
-    <ul class="nav-links" id="navLinks"><li><a href="index.html">Início</a></li><li><a aria-current="page" href="sobre.html">Sobre</a></li><li><a href="index.html#habilidades">Habilidades</a></li><li><a href="index.html#projetos">Projetos</a></li><li><a href="index.html#contato">Contato</a></li></ul>
+    <ul class="nav-links" id="navLinks"><li><a data-i18n="nav.home" href="index.html">Início</a></li><li><a data-i18n="nav.about" aria-current="page" href="sobre.html">Sobre</a></li><li><a data-i18n="nav.skills" href="index.html#habilidades">Habilidades</a></li><li><a data-i18n="nav.projects" href="index.html#projetos">Projetos</a></li><li><a data-i18n="nav.contact" href="index.html#contato">Contato</a></li></ul>
+    <div class="nav-actions">
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Mudar idioma">EN</button>
+      <button class="terminal-trigger" id="terminalTrigger" type="button" aria-label="Abrir terminal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+      </button>
+    </div>
     <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </nav>
 </header>
 <main>
-<section class="about-hero hero-wave" data-wave-mesh data-wave-dot="#7fb3c8" data-wave-accent="#5EEAD4" data-wave-crests="true">
+<section class="about-hero about-constellation" data-constellation data-constellation-dot="#5EEAD4" data-constellation-accent="#F2A65A">
   <div class="wrap">
-    <h1 class="section-title reveal">Sobre mim</h1>
-    <p class="section-sub reveal">Quem está por trás do código.</p>
+    <h1 class="section-title reveal" data-i18n="about.title">Sobre mim</h1>
+    <p class="section-sub reveal" data-i18n="about.sub">Quem está por trás do código.</p>
     <div class="about-grid">
       <div class="about-text reveal">
         <p>Sou o <strong>Vinícius</strong>, estudante do sexto período de Análise e Desenvolvimento de Sistemas na UNIBRA. Meu foco é o desenvolvimento back-end com <strong>Java</strong> e o ecossistema <strong>Spring</strong>, e também gosto de cuidar da interface com HTML, CSS e JavaScript.</p>
@@ -52,7 +58,7 @@
 </section>
 <section class="bg-grid-glow">
   <div class="wrap">
-    <h2 class="block-title reveal">Formação</h2>
+    <h2 class="block-title reveal" data-i18n="about.edu">Formação</h2>
     <div class="timeline" id="sobreTimeline">
       <div class="tl-item reveal"><div class="tl-period">01/2021 — 12/2023</div><h3>Ensino Médio Completo</h3><p>Colégio 2001</p></div>
       <div class="tl-item reveal"><div class="tl-period">01/2024 — 12/2026</div><h3>Tecnólogo em Análise e Desenvolvimento de Sistemas</h3><p>UNIBRA, cursando o 6º período</p></div>
@@ -62,16 +68,16 @@
 </section>
 <section class="bg-dots-matrix">
   <div class="wrap">
-    <h2 class="block-title reveal">Habilidades</h2>
+    <h2 class="block-title reveal" data-i18n="about.skills">Habilidades</h2>
     <div class="skills-grid"><div class="skill-group spotlight reveal"><h3>Back-end</h3><div class="chips"><span class="chip">Java</span><span class="chip">Node.js</span><span class="chip">API REST</span></div></div><div class="skill-group spotlight reveal"><h3>Frameworks e bibliotecas</h3><div class="chips"><span class="chip">Spring Boot</span><span class="chip">Spring Security</span><span class="chip">JWT</span><span class="chip">Spring Data JPA</span></div></div><div class="skill-group spotlight reveal"><h3>Banco de dados</h3><div class="chips"><span class="chip">MySQL</span><span class="chip">SQLite</span></div></div><div class="skill-group spotlight reveal"><h3>Desenvolvimento web</h3><div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">React</span></div></div><div class="skill-group spotlight reveal"><h3>Ferramentas</h3><div class="chips"><span class="chip">Maven</span><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Docker</span><span class="chip">JUnit</span><span class="chip">GitHub Actions</span><span class="chip">Postman</span></div></div><div class="skill-group spotlight reveal"><h3>Competências</h3><div class="chips"><span class="chip">Organização de código</span><span class="chip">Resolução de problemas</span><span class="chip">Aprendizado contínuo</span><span class="chip">Trabalho em equipe</span></div></div></div>
   </div>
 </section>
-<section class="cta-band bg-aurora-end" data-wave-mesh data-wave-dot="#5EEAD4" data-wave-accent="#F2A65A" data-wave-crests="true">
+<section class="cta-band bg-aurora-end">
   <div class="wrap reveal">
-    <h2 class="block-title">Quer ver o que já construí?</h2>
+    <h2 class="block-title" data-i18n="about.cta">Quer ver o que já construí?</h2>
     <div class="hero-cta">
-      <a class="btn btn-primary" href="index.html#projetos">Ver projetos</a>
-      <a class="btn btn-ghost" href="assets/curriculo-vinicius-ziano.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Currículo</a>
+      <a class="btn btn-primary" data-i18n="btn.projects" href="index.html#projetos">Ver projetos</a>
+      <a class="btn btn-ghost" href="assets/curriculo-vinicius-ziano.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg><span data-i18n="btn.cv">Currículo</span></a>
     </div>
   </div>
 </section>
@@ -80,8 +86,25 @@
   <p class="code-sign">&lt;feito com Java, café e curiosidade /&gt;</p>
   <small>© 2026 Vinícius Figueiredo Ziano</small>
 </div></footer>
+<!-- Terminal Interativo (Easter Egg) -->
+<div class="terminal-overlay" id="terminalOverlay" aria-hidden="true">
+  <div class="terminal-window">
+    <div class="terminal-topbar">
+      <span>viniziano@portfolio-cli:~</span>
+      <button class="terminal-close" id="terminalClose" aria-label="Fechar terminal">&times;</button>
+    </div>
+    <div class="terminal-body" id="terminalBody">
+      <p class="t-welcome">Bem-vindo ao terminal interativo do Ziano! Digite <span class="t-highlight">help</span> para ver os comandos disponíveis.</p>
+    </div>
+    <div class="terminal-input-line">
+      <span>$</span>
+      <input type="text" id="terminalInput" autocomplete="off" spellcheck="false" placeholder="digite um comando...">
+    </div>
+  </div>
+</div>
+
 <a href="https://wa.me/5581983697754" target="_blank" rel="noopener" class="whats-float" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
-<script src="js/wave-mesh.js"></script>
+<script src="js/constellation.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
